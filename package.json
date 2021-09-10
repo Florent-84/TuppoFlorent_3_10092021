@@ -1,0 +1,19 @@
+{
+  "name": "tuppoflorent_3_10092021",
+  "version": "1.0.0",
+  "description": "Ceci est une version du site Oh my food",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Florent-84/TuppoFlorent_3_10092021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Florent-84/TuppoFlorent_3_10092021/issues"
+  },
+  "homepage": "https://github.com/Florent-84/TuppoFlorent_3_10092021#readme"
+}
