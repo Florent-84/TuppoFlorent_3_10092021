@@ -1,0 +1,29 @@
+.section-accueil {
+    display: flex;
+    flex-direction: column;
+    height: 335px;
+    background-color: rgb(231, 231, 231);
+
+.section-accueil__localisation {
+ height: 50px;
+ background-color: rgba(207, 207, 207, 0.884);
+ border-top: outset 2px rgba(180, 180, 180, 0.884);
+ text-align: center;
+ }
+
+ .section-accueil__localisation input {
+    width: 145px;
+     height: 40px;
+     margin-top: 5px;
+     margin-bottom: 5px;
+     padding-left: 15px;
+     font-size: 1em;
+     font-weight: bold;
+     background-color: rgba(207, 207, 207, 0.884);
+     border:none;
+ }
+ .maps {
+     display: inline-block;
+     margin-left: 10px;
+ }
+}

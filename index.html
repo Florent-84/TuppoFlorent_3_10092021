@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="public/css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <script
+    src="https://kit.fontawesome.com/314b767ab3.js"
+    crossorigin="anonymous"
+  ></script>
     
     <title>Oh my food</title>
 </head>
@@ -17,8 +24,11 @@
 
     <!--ACCUEIL-->
     <section class="section-accueil">
-        <div class="container-maps">maps,paris belleville</div>
-        <h1>Réservez le menu qui vous convient</h1>
+        <div class="section-accueil__localisation">
+        
+            <span class="maps"><i class="fas fa-map-marker-alt"></i></span><input type="text" name="ville" id="ville" placeholder="Paris, Belleville"/></div>
+        
+        
         <p></p>
         <button></button>
     </section>
@@ -32,11 +42,13 @@
 </body>
 
     <footer class="footer-container">
-        <ul>
-            <li>Proposer un restaurant</li>
-            <li>Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li>Contact</li>
+        <h1 class="footer-container__titre">ohmyfood</h1>
+        <ul class="footer-container__menu">
+
+            <li><div><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></div></li>
+            <li><div><i class="fas fa-hands-helping"></i><a href="#" class="devenirpartenaire">Devenir partenaire</a></div></li>           
+            <li><a href="#" class="mentionlegale">Mentions légales</a></li>
+            <a href="mailto:contact@ohmyfood.com" class="liencontact">Contact</a>
         </ul>
     </footer>
    

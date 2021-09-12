@@ -1,14 +1,93 @@
 body {
-    margin: 0;
-    font-family: "Roboto",sans-serif;
-  }
+  margin: 0px;
+  font-family: "roboto", sans-serif;
+}
 
 .header-logo {
-    text-align: center;  
-} 
+  text-align: center;
+  height: 65px;
+}
 
 .header-logo img {
-    width: 160px;
+  width: 160px;
+  margin-top: 25px;
+}
+
+.section-accueil {
+  display: flex;
+  flex-direction: column;
+  height: 335px;
+  background-color: #e7e7e7;
+}
+.section-accueil .section-accueil__localisation {
+  height: 50px;
+  background-color: rgba(207, 207, 207, 0.884);
+  border-top: outset 2px rgba(180, 180, 180, 0.884);
+  text-align: center;
+}
+.section-accueil .section-accueil__localisation input {
+  width: 145px;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: rgba(207, 207, 207, 0.884);
+  border: none;
+}
+.section-accueil .maps {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.footer-container {
+  background-color: #353535;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+}
+.footer-container .footer-container__titre {
+  color: white;
+  font-family: "Shrikhand";
+  font-size: 1.1em;
+  font-weight: normal;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+.footer-container .footer-container__menu {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  list-style-type: none;
+  margin: 25px;
+  padding: 0px;
+  font-size: 1em;
+}
+.footer-container li {
+  padding-bottom: 7px;
+}
+.footer-container a {
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.footer-container .devenirpartenaire {
+  margin-left: 8px;
+}
+.footer-container .fas.fa-utensils::before {
+  font-size: 13px;
+}
+.footer-container .fas.fa-hands-helping {
+  font-size: 10px;
+}
+.footer-container .mentionlegale {
+  margin-left: 0px;
+}
+.footer-container .liencontact {
+  margin: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

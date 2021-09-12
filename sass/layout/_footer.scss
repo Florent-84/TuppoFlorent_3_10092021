@@ -1,0 +1,58 @@
+.footer-container {
+    background-color:  #353535;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+
+.footer-container__titre {
+    color: white;
+    font-family: "Shrikhand";
+    font-size: 1.1em;
+    font-weight: normal;
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+
+  .footer-container__menu {
+    display: flex;
+    flex-direction: column;
+      color: white;
+      list-style-type: none;
+      margin: 25px;
+      padding: 0px;
+      font-size: 1em;
+}
+
+li {
+    padding-bottom: 7px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.devenirpartenaire {
+    margin-left: 8px;
+}
+
+  .fas.fa-utensils::before {
+    font-size: 13px;
+  }
+
+  .fas.fa-hands-helping {
+      font-size: 10px;
+  }
+
+  .mentionlegale {
+    margin-left: 0px;
+}
+
+.liencontact{
+    margin: 0px;
+}
+
+}
