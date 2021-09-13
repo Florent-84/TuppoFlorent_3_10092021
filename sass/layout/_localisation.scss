@@ -2,28 +2,50 @@
     display: flex;
     flex-direction: column;
     height: 335px;
-    background-color: rgb(231, 231, 231);
+    background-color:#f6f6f6;
 
+$color-de-fond : #eaeaea;
 .section-accueil__localisation {
  height: 50px;
- background-color: rgba(207, 207, 207, 0.884);
- border-top: outset 2px rgba(180, 180, 180, 0.884);
+ background-color: $color-de-fond;
+ box-shadow: 0px -2px 2px rgb(119 119 119 / 37%);
  text-align: center;
  }
 
  .section-accueil__localisation input {
     width: 145px;
-     height: 40px;
-     margin-top: 5px;
-     margin-bottom: 5px;
-     padding-left: 15px;
-     font-size: 1em;
+     margin-top: 15px;
+     font-size: 0.98em;
      font-weight: bold;
-     background-color: rgba(207, 207, 207, 0.884);
+     background-color:$color-de-fond;
      border:none;
  }
+
+ ::placeholder {
+     color: rgb(77, 77, 77);
+ }
+
  .maps {
      display: inline-block;
+     margin-right: 10px;
      margin-left: 10px;
  }
+
+.accueil-titre {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 60px;
+    margin-right: 80px;
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0px;
+    color:#4d4d4d;
+}
+
 }

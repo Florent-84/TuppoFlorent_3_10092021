@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="public/css/style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
     <script
-    src="https://kit.fontawesome.com/314b767ab3.js"
-    crossorigin="anonymous"
-  ></script>
-    
-    <title>Oh my food</title>
-</head>
-<body>
+      src="https://kit.fontawesome.com/314b767ab3.js"
+      crossorigin="anonymous"
+    ></script>
 
+    <title>Oh my food</title>
+  </head>
+  <body>
     <!--HEADER-->
-    <header class="header-logo">       
-           <img src="public/logo/ohmyfood.png" alt="oh my food">        
-   </header>
+    <header class="header-logo">
+      <img src="public/logo/ohmyfood.png" alt="oh my food" />
+    </header>
 
     <!--ACCUEIL-->
     <section class="section-accueil">
-        <div class="section-accueil__localisation">
-        
-            <span class="maps"><i class="fas fa-map-marker-alt"></i></span><input type="text" name="ville" id="ville" placeholder="Paris, Belleville"/></div>
-        
-        
-        <p></p>
-        <button></button>
+      <div class="section-accueil__localisation">
+        <div class="maps"><i class="fas fa-map-marker-alt"></i></div>
+        <input
+          type="text"
+          name="ville"
+          id="ville"
+          placeholder="Paris, Belleville"/>
+      </div>
+
+      
+        <div class="accueil-titre">Réservez le menu qui vous convient</div>
+      
+      <div class="accueil-description">
+        <p class="description">
+          Découvrez des restaurants d'exception,<br />séléctionnés par nos
+          soins.
+        </p>
+      </div>
+      <div class="bouton-explorer">
+        <button>Explorer nos restaurants</button>
+      </div>
     </section>
 
     <!--FONCTIONNEMENT-->
@@ -38,19 +54,27 @@
 
     <!--RESTAURANTS-->
     <section></section>
+  
 
+ <footer>
+  <div class="footer-container">
+    <h1 class="footer-container__titre">ohmyfood</h1>
+    <ul class="footer-container__menu">
+      <li>
+        <div>
+          <i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a>
+        </div>
+      </li>
+      <li>
+        <div>
+          <i class="fas fa-hands-helping"></i
+          ><a href="#" class="devenirpartenaire">Devenir partenaire</a>
+        </div>
+      </li>
+      <li><a href="#" class="mentionlegale">Mentions légales</a></li>
+     <li><a href="mailto:contact@ohmyfood.com" class="liencontact">Contact</a></li> 
+    </ul>
+    </div>
+  </footer>
 </body>
-
-    <footer class="footer-container">
-        <h1 class="footer-container__titre">ohmyfood</h1>
-        <ul class="footer-container__menu">
-
-            <li><div><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></div></li>
-            <li><div><i class="fas fa-hands-helping"></i><a href="#" class="devenirpartenaire">Devenir partenaire</a></div></li>           
-            <li><a href="#" class="mentionlegale">Mentions légales</a></li>
-            <a href="mailto:contact@ohmyfood.com" class="liencontact">Contact</a>
-        </ul>
-    </footer>
-   
-
 </html>
