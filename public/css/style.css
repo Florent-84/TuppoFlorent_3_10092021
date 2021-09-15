@@ -3,125 +3,6 @@ body {
   font-family: "roboto", sans-serif;
 }
 
-.bouton-explorer {
-  height: 50px;
-  text-align: center;
-  margin-top: 15px;
-}
-.bouton-explorer button {
-  justify-content: center;
-  width: 215px;
-  height: 50px;
-  font-size: 15px;
-  font-weight: bold;
-  font-family: "roboto", sans-serif;
-  color: white;
-  background: linear-gradient(to bottom, #ff79da, #9356dc);
-  border: none;
-  border-radius: 23px;
-  cursor: pointer;
-  box-shadow: 0px 5px 10px rgba(27, 27, 27, 0.3);
-}
-
-.numero-un {
-  background-color: #9356dc;
-  color: white;
-  padding: 3px 7px 3px 7px;
-  border-radius: 12px;
-  font-size: 14px;
-  position: relative;
-  right: 42px;
-}
-
-.numero-deux {
-  background-color: #9356dc;
-  color: white;
-  padding: 3px 7px 3px 7px;
-  border-radius: 12px;
-  font-size: 14px;
-  position: relative;
-  right: 42px;
-}
-
-.numero-trois {
-  background-color: #9356dc;
-  color: white;
-  padding: 3px 7px 3px 7px;
-  border-radius: 12px;
-  font-size: 14px;
-  position: relative;
-  right: 42px;
-}
-
-.choisissez {
-  width: 325px;
-  height: 75px;
-  margin-left: 25px;
-  padding-right: 20px;
-  border-radius: 25px;
-  border: none;
-  font-family: "roboto", sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  background-color: #f6f6f6;
-  box-shadow: 0px 5px 10px rgba(27, 27, 27, 0.1);
-}
-
-.logomobile {
-  font-size: 20px;
-  margin-right: 20px;
-}
-
-i.fas.fa-mobile-alt::before {
-  color: #797979;
-}
-
-.composez {
-  width: 325px;
-  height: 75px;
-  margin-left: 25px;
-  padding-right: 35px;
-  border-radius: 25px;
-  border: none;
-  font-family: "roboto", sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  background-color: #f6f6f6;
-  box-shadow: 0px 5px 10px rgba(27, 27, 27, 0.1);
-}
-
-.liste {
-  font-size: 18px;
-  margin-right: 20px;
-}
-
-i.fas.fa-list-ul::before {
-  color: #797979;
-}
-
-.degustez {
-  width: 325px;
-  height: 75px;
-  margin-left: 25px;
-  padding-right: 35px;
-  border-radius: 25px;
-  border: none;
-  font-family: "roboto", sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  background-color: #f6f6f6;
-  box-shadow: 0px 5px 10px rgba(27, 27, 27, 0.1);
-}
-
-.store {
-  font-size: 16px;
-  margin-right: 20px;
-}
-
-i.fas.fa-store::before {
-  color: #797979;
-}
-
 .header-logo {
   text-align: center;
   height: 65px;
@@ -132,6 +13,7 @@ i.fas.fa-store::before {
   margin-top: 25px;
 }
 
+/*SECTION ACCUEIL TITRE ET DESCRIPTION*/
 .section-accueil {
   display: flex;
   flex-direction: column;
@@ -176,6 +58,134 @@ i.fas.fa-store::before {
   color: #4d4d4d;
 }
 
+/*BOUTON EXPLORER NOS RESTAURANTS*/
+.bouton-explorer {
+  height: 50px;
+  text-align: center;
+  margin-top: 15px;
+}
+.bouton-explorer button {
+  justify-content: center;
+  width: 215px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "roboto", sans-serif;
+  color: white;
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  border: none;
+  border-radius: 23px;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(27, 27, 27, 0.3);
+}
+
+/*BOUTONS FONCTIONNEMENT*/
+/*pastille numero*/
+.numero-un {
+  background-color: #9356dc;
+  color: white;
+  padding: 3px 7px 3px 7px;
+  border-radius: 12px;
+  font-size: 14px;
+  position: relative;
+  right: 30px;
+  right: 28px;
+}
+
+.numero-deux {
+  background-color: #9356dc;
+  color: white;
+  padding: 3px 7px 3px 7px;
+  border-radius: 12px;
+  font-size: 14px;
+  position: relative;
+  right: 30px;
+}
+
+.numero-trois {
+  background-color: #9356dc;
+  color: white;
+  padding: 3px 7px 3px 7px;
+  border-radius: 12px;
+  font-size: 14px;
+  position: relative;
+  right: 30px;
+}
+
+/*style des boutons*/
+.choisissez {
+  width: 325px;
+  height: 75px;
+  margin-left: 25px;
+  padding-right: 50px;
+  border-radius: 25px;
+  border: none;
+  font-family: "roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #f6f6f6;
+  box-shadow: 0px 5px 10px rgba(27, 27, 27, 0.1);
+  cursor: pointer;
+  text-align: right;
+}
+
+.composez {
+  width: 325px;
+  height: 75px;
+  margin-left: 25px;
+  padding-right: 50px;
+  border-radius: 25px;
+  border: none;
+  font-family: "roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #f6f6f6;
+  box-shadow: 0px 5px 10px rgba(27, 27, 27, 0.1);
+  cursor: pointer;
+}
+
+.degustez {
+  width: 325px;
+  height: 75px;
+  margin-left: 25px;
+  padding-right: 50px;
+  border-radius: 25px;
+  border: none;
+  font-family: "roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #f6f6f6;
+  box-shadow: 0px 5px 10px rgba(27, 27, 27, 0.1);
+  cursor: pointer;
+}
+
+.logomobile {
+  font-size: 20px;
+  margin-right: 28px;
+}
+
+.liste {
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.store {
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+i.fas.fa-mobile-alt::before {
+  color: #797979;
+}
+
+i.fas.fa-list-ul::before {
+  color: #797979;
+}
+
+i.fas.fa-store::before {
+  color: #797979;
+}
+
 .fonctionnement {
   height: 445px;
 }
@@ -190,6 +200,7 @@ i.fas.fa-store::before {
   height: 270px;
 }
 
+/*FOOTER*/
 .footer-container {
   background-color: #353535;
   width: 100%;
