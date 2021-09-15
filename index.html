@@ -14,9 +14,9 @@
       src="https://kit.fontawesome.com/314b767ab3.js"
       crossorigin="anonymous">
     </script>
-
     <title>Oh my food</title>
   </head>
+
   <body>
     <!--HEADER-->
     <header class="header-logo">
@@ -24,7 +24,7 @@
     </header>
 
     <!--ACCUEIL-->
-    <section class="section-accueil">
+    <div class="section-accueil">
       <div class="section-accueil__localisation">
         <div class="maps"><i class="fas fa-map-marker-alt"></i></div>
         <input
@@ -33,7 +33,8 @@
           id="ville"
           placeholder="Paris, Belleville"/>
       </div>
-        <h1 class="accueil-titre">Réservez le menu qui vous convient</h1>      
+
+      <h1 class="accueil-titre">Réservez le menu qui vous convient</h1>
       <div class="accueil-description">
         <p class="description">
           Découvrez des restaurants d'exception,<br />séléctionnés par nos
@@ -43,41 +44,52 @@
       <div class="bouton-explorer">
         <button>Explorer nos restaurants</button>
       </div>
-    </section>
+    </div>
 
     <!--FONCTIONNEMENT-->
     <section class="fonctionnement">
       <h2 class="fonctionnement__titre">Fonctionnement</h2>
       <div class="btn-fonctionnement">
-        <button class="choisissez"><span class="numero-un">1</span><span class="logomobile"><i class="fas fa-mobile-alt"></i></span>Choisissez un restaurant</button>
-        <button class="composez"><span class="numero-deux">2</span><span class="liste"><i class="fas fa-list-ul"></i></span>Composez votre menu</button>
-        <button class="degustez"><span class="numero-trois">3</span><span class="store"><i class="fas fa-store"></i></span>Dégustez au restaurant</button>
+        <button class="choisissez">
+          <span class="numero-un">1</span>
+          <span class="logomobile"><i class="fas fa-mobile-alt"></i></span>Choisissez un restaurant
+        </button>
+        <button class="composez">
+          <span class="numero-deux">2</span>
+          <span class="liste"><i class="fas fa-list-ul"></i></span>Composez votre menu
+        </button>
+        <button class="degustez">
+          <span class="numero-trois">3</span>
+          <span class="store"><i class="fas fa-store"></i></span>Dégustez aurestaurant
+        </button>
       </div>
     </section>
 
     <!--RESTAURANTS-->
-    
-  
+
     <!--FOOTER-->
- <footer>
-  <div class="footer-container">
-    <h1 class="footer-container__titre">ohmyfood</h1>
-    <ul class="footer-container__menu">
-      <li>
-        <div>
-          <i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a>
-        </div>
-      </li>
-      <li>
-        <div>
-          <i class="fas fa-hands-helping"></i
-          ><a href="#" class="devenirpartenaire">Devenir partenaire</a>
-        </div>
-      </li>
-      <li><a href="#" class="mentionlegale">Mentions légales</a></li>
-     <li><a href="mailto:contact@ohmyfood.com" class="liencontact">Contact</a></li> 
-    </ul>
-    </div>
-  </footer>
-</body>
+    <footer>
+      <div class="footer-container">
+        <h1 class="footer-container__titre">ohmyfood</h1>
+        <ul class="footer-container__menu">
+          <li>
+            <div>
+              <i class="fas fa-utensils"></i>
+              <a href="#">Proposer un restaurant</a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <i class="fas fa-hands-helping"></i>
+              <a href="#" class="devenirpartenaire">Devenir partenaire</a>
+            </div>
+          </li>
+          <li><a href="#" class="mentionlegale">Mentions légales</a></li>
+          <li>
+            <a href="mailto:contact@ohmyfood.com" class="liencontact">Contact</a>            
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
