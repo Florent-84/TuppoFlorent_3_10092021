@@ -19,8 +19,13 @@
         border: none;
         border-radius: 23px;
         cursor: pointer;
-        box-shadow:  0px 5px 10px rgba(27, 27, 27, 0.30);
+        box-shadow: 0px 3px 5px 3px #cccccc;
     }
+}
+
+.bouton-explorer button:hover {
+    box-shadow: 0px 3px 5px 3px #929292;
+    background: linear-gradient(to bottom, #ff93e0, #9c67dd);              
 }
 
 /*BOUTONS FONCTIONNEMENT*/
@@ -70,14 +75,23 @@
 .choisissez {
 @include btn-fonctionnement-style;
 text-align: right;
+     &:hover{
+         background: #f5edff ;
+     }
 }
 
 .composez {
     @include btn-fonctionnement-style;
+    &:hover{
+        background: #f5edff ;
+    }   
 }
 
 .degustez {
     @include btn-fonctionnement-style;
+    &:hover{
+        background: #f5edff;
+    } 
 }
 
 .logomobile {
@@ -95,15 +109,25 @@ margin-right: 28px;
     margin-right: 20px;
  }
 
-i.fas.fa-mobile-alt::before {
+i.fas.fa-mobile-alt {
     color: $color-logo-menu;
+    &:hover {
+        color: $color-primary; 
+ }
 }
 
-i.fas.fa-list-ul::before {
+i.fas.fa-list-ul {
     color: $color-logo-menu;
+    &:hover {
+        color: $color-primary; 
+ } 
 }
 
 
-i.fas.fa-store::before {
+i.fas.fa-store {
     color: $color-logo-menu;
+    &:hover {
+    color: $color-primary; 
+ }
 }
+
