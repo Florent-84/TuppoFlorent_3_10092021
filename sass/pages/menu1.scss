@@ -1,0 +1,136 @@
+/*LOGO OH MY FOOD ET FLECHE DE RETOUR*/
+
+.imagedefond {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.retouraccueil {
+    font-size: 20px;
+    position: relative;
+    left: -75px;
+    bottom: 8px;
+
+    .fa-arrow-left:before {
+        color: black;
+    }
+}
+
+/*CARTE MENU LA PALETTE DU GOUT*/
+
+.contenair_menu {
+    background-color: #f6f6f6;
+    height: 1225px;
+    position: relative;
+    margin-top: -55px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    padding: 15px 10px 50px 10px;
+    
+/*titre du menu*/
+
+@mixin titre-menu {
+    font-family: "Shrikhand";
+    font-size: 28px;
+    font-weight: normal;
+    padding-left: 5px; 
+}
+    .titre__menu {
+     @include titre-menu
+    }
+
+    .container-texte-logo {
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+
+    /*logo coeur vide*/
+        .far.fa-heart {    
+            margin: 20px;
+            margin-top: 30px;
+            font-size: 23px;
+            color: #848484;
+            display: flex;
+            justify-content: center;
+            background-clip:text;
+            -webkit-background-clip:text;    
+        }
+    /*logo coeur plein*/
+        .fas.fa-heart {
+            position: relative;
+        left: 45px;
+        top: 30px;
+        }
+    
+    /* animation logo coeur plein*/
+    @keyframes animcoeur {
+        0%  {background-color: transparent}
+       25% {background-color: #ffe0f6 }
+       50%  {background-color: $color-secondary}
+      100%  {background-color: $color-primary }
+   }
+    
+    .fas.fa-heart:hover {
+        position: relative;
+        left: 45px;
+        top: 30px;
+        font-size: 23px;
+        height: 20px;
+        animation-name: animcoeur;
+        animation-duration: 2s;
+        background-clip:text;
+        -webkit-background-clip:text;
+        color:transparent; 
+        animation-fill-mode: forwards;
+   }
+ }
+
+/*sous titre du menu*/
+@mixin sous-titre-menu {
+    margin-left: 5px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #1f1f1f;
+    border-bottom: solid;
+    height: 23px;
+    width: 40px;
+    border-color: $color-tertiary;  
+}
+.sous-titre__menu {
+    @include sous-titre-menu 
+}
+
+.block-description-menu {
+    height: 70px;
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+h3 {
+   margin: 0px;
+   margin-top: 10px;
+   margin-left: 5px;
+   font-size: 18px;
+   padding-top: 15px;
+   padding-bottom: 3px;
+}
+
+.intitule-prix {
+    display: flex;
+
+}
+
+p {
+    margin:0px;
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+
+
+
+}
