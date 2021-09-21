@@ -11,17 +11,17 @@
     position: relative;
     left: -75px;
     bottom: 8px;
+}
 
-    .fa-arrow-left:before {
-        color: black;
-    }
+.fa-arrow-left {
+    color: black;
 }
 
 /*CARTE MENU LA PALETTE DU GOUT*/
 
 .contenair_menu {
     background-color: #f6f6f6;
-    height: 1225px;
+    height: 1090px;
     position: relative;
     margin-top: -55px;
     border-top-left-radius: 45px;
@@ -32,9 +32,9 @@
 
 @mixin titre-menu {
     font-family: "Shrikhand";
-    font-size: 28px;
+    font-size: 27px;
     font-weight: normal;
-    padding-left: 5px; 
+    margin-top: 20px; 
 }
     .titre__menu {
      @include titre-menu
@@ -46,21 +46,20 @@
         height: 70px;
 
     /*logo coeur vide*/
-        .far.fa-heart {    
+        .far.fa-heart::before {    
             margin: 20px;
             margin-top: 30px;
             font-size: 23px;
             color: #848484;
             display: flex;
-            justify-content: center;
-            background-clip:text;
-            -webkit-background-clip:text;    
+            justify-content: center;            
         }
     /*logo coeur plein*/
         .fas.fa-heart {
-            position: relative;
+        position: relative;
         left: 45px;
         top: 30px;
+        margin-left: 4px;
         }
     
     /* animation logo coeur plein*/
@@ -80,15 +79,23 @@
         animation-name: animcoeur;
         animation-duration: 2s;
         background-clip:text;
-        -webkit-background-clip:text;
         color:transparent; 
         animation-fill-mode: forwards;
    }
  }
 
+ /*contenair des menus*/
+ .contenair-article {
+     margin-bottom: 30px;
+ }
+
+ .contenair-article-plats {
+     margin-bottom: 45px;
+ }
+
 /*sous titre du menu*/
 @mixin sous-titre-menu {
-    margin-left: 5px;
+    margin-left: 10px;
     margin-top: 20px;
     font-size: 15px;
     font-weight: normal;
@@ -105,32 +112,102 @@
 .block-description-menu {
     height: 70px;
     background-color: white;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     border-radius: 15px;
+    box-shadow: 0px 5px 10px rgb(27 27 27 / 10%);
+    cursor: pointer;
 }
 
 h3 {
    margin: 0px;
    margin-top: 10px;
-   margin-left: 5px;
-   font-size: 18px;
+   margin-left: 10px;
+   font-size: 17px;
+   letter-spacing: -0.5px;
    padding-top: 15px;
    padding-bottom: 3px;
 }
 
 .intitule-prix {
+    width: 325px;
     display: flex;
-
+    justify-content: space-between;
+    font-size: 15px;
+    margin-left: 10px;
 }
 
 p {
     margin:0px;
-    margin-left: 5px;
+    margin-left: 10px;
     font-size: 15px;
     font-weight: lighter;
 }
 
+strong {
+    color: #464646;
+    font-size: 15px;
+}
+
+.bouton-explorer button {
+    width: 185px;
+}
+
+@keyframes anim-check{
+    0% {
+        transform: scaleX(0);
+        opacity: .5;
+    }
+    17% {
+        transform: scaleX(.18);
+    }
+    24% {
+        transform: scaleX(.4);
+    }
+    46% {
+        transform: scaleX(.81);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.validation-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    bottom: 55px;
+    width: 58px;
+    height: 70px;
+    left: 297px;
+    background-color: $color-tertiary;
+    cursor: pointer;
+    opacity: 0; 
+}
+
+.validation-menu:hover {
+ animation-name: anim-check;
+ animation-duration: 1s;
+ opacity: 1;
+}
 
 
+
+.fas.fa-check {
+    background-color: white;
+    color: $color-tertiary;
+    border-radius: 50%;
+    font-size: 13px;
+    padding: 4px;
+}
+
+ .fas.fa-check:hover {
+    transform: rotate(360deg);
+    transition: transform 1.5s cubic-bezier(0.3, 0.7, 0.4, 1.5) 300ms;
+}
 
 }
+

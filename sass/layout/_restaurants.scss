@@ -6,11 +6,12 @@
 .restaurants__titre {
     padding-top: 50px;
     padding-left: 20px;
+    letter-spacing: -0.5px;
 }
 
 .container-restaurants {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
     height: 1060px;
     padding-left: 20px;
@@ -75,54 +76,52 @@
 
 .titrelapalettedugout, .titrelanoteenchantee, .titrealafrancaise, .titreledelicedessens {
     margin-bottom: 0px;
-    margin-left: 15px;
-    font-size: 16px;
-    font-weight: bold;
+    margin-left: 11px;
+    margin-top: 12px;
+    font-size: 1.10em;
+    letter-spacing: -0.5px;
 }
 
 .soustitremenilmontant, .soustitrecharonne, .soustitreciterouge, .soustitrefoliemericourt {
-    margin:5px 0px 0px 15px;
+    margin:5px 0px 0px 12px;
 }
 
 .far.fa-heart {    
     margin: 20px;
+    height: 20px;
     font-size: 23px;
     color: #848484;
     display: flex;
-    justify-content: center;
-    background-clip:text;
-    -webkit-background-clip:text;    
+    justify-content: center;  
 }
       
 }
 
 .fas.fa-heart {
-    background-clip:text;
-    color: transparent;
-    position: relative;
-    left: 91px;
-    top: 20px;
-    font-size: 23px;
-    height: 20px;
-}
-
-.container-restaurant__alafrancaise .fas.fa-heart {
-    background-clip:text;
-    color: transparent;
-    position: relative;
-    left: 108px;
-    top: 20px;
-    font-size: 23px;
-    height: 20px;
-}
-
-.container-restaurant__ledelicedessens .fas.fa-heart {
-    background-clip:text;
+    display: flex;
     color: transparent;
     position: relative;
     left: 90px;
     top: 20px;
-    font-size: 23px;
+    font-size: 22px;
+    height: 20px;    
+}
+
+.container-restaurant__alafrancaise .fas.fa-heart {
+    color: transparent;
+    position: relative;
+    left: 108px;
+    top: 20px;
+    font-size: 22px;
+    height: 20px;
+}
+
+.container-restaurant__ledelicedessens .fas.fa-heart {
+    color: transparent;
+    position: relative;
+    left: 90px;
+    top: 20px;
+    font-size: 22px;
     height: 20px;
 }
  
@@ -139,6 +138,7 @@
      animation-duration: 2s;
      background-clip:text;
      -webkit-background-clip:text;
+     -moz-background-clip:text;
      color:transparent; 
      animation-fill-mode: forwards;
 }
