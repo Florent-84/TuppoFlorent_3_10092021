@@ -109,63 +109,6 @@
     @include sous-titre-menu 
 }
 
-/*ARTICLE: TITRE ,SOUSTITRE, PRIX ET ANIMATION CHECK*/
-
-.block-description-menu {
-    width: 350px;
-    height: 70px;
-    background-color: white;
-    margin-bottom: 13px;
-    border-radius: 15px;
-    box-shadow: 0px 5px 10px rgb(27 27 27 / 10%);
-    cursor: pointer;
-}
-
-.validation-menu {
-    position: relative;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border: none;
-    bottom: 55px;
-    width: 58px;
-    height: 70px;
-    left: 297px;
-    background-color: $color-tertiary;
-    cursor: pointer;
-    opacity: 0; 
-}
-
-.block-description-menu:hover {
-    animation-name: anim-check;
-    animation-duration: 1s;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border: none;
-    position: relative;
-    bottom: 55px;
-    width: 58px;
-    height: 70px;
-    left: 297px;
-    background-color: $color-tertiary;
-    cursor: pointer;
-    opacity: 1;
-
-    .logo-validation:hover {
-        transform: rotate(360deg);
-        transition: transform 1.5s cubic-bezier(0.3, 0.7, 0.4, 1.5) 300ms;
-    }
-}
-
-.logo-validation {
-    background-color: white;
-    color: $color-tertiary;
-    border-radius: 50%;
-    font-size: 13px;
-    padding: 4px;
-    transform: rotate(360deg);
-    transition: transform 1.5s cubic-bezier(0.3, 0.7, 0.4, 1.5) 300ms;
-}
-
 h3 {
    margin: 0px;
    margin-top: 10px;
@@ -196,27 +139,86 @@ strong {
     font-size: 15px;
 }
 
-.bouton-explorer button {
-    width: 185px;
-}
-
+/*ANIMATION DIV VALIDATION MENU*/
 @keyframes anim-check{
     0% {
-        transform: scaleX(0);
-        opacity: .5;
-    }
-    17% {
-        transform: scaleX(.18);
-    }
-    24% {
-        transform: scaleX(.4);
-    }
-    46% {
-        transform: scaleX(.81);
-    }
+        transform: scalex(0);
+    }    
+
     100% {
-        transform: scaleX(1);
+        transform: scalex(1);
     }
+}
+
+/*ARTICLE BLOCK DESCRIPTION MENU*/
+.block-description-menu {   
+    height: 70px;
+    background-color: white;
+    margin-bottom: 13px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgb(27 27 27 / 10%);
+    cursor: pointer;
+}
+
+.block-description-menu:hover {
+
+      .validation-menu {
+        animation-name: anim-check;
+        animation-duration: 0.5s;
+        opacity: 1;
+     
+       .logo-check {
+           color: $color-tertiary;
+           background-color: white;
+           font-size: 12px;
+           padding: 3px 4px 3px 4px;
+           border-radius: 50%;
+           transform: rotate(360deg);
+           transition: transform 1.5s cubic-bezier(.08,.29,.39,.99) ;
+           }     
+       }  
+}
+
+/*DIV VALIDATION MENU*/
+.validation-menu {
+    transform-origin: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    bottom: 55px;
+    width: 58px;
+    height: 70px;
+    left: 297px;
+    background-color: $color-tertiary;
+    cursor: pointer;
+    opacity: 0;   
+}
+
+.validation-menu:hover {
+ animation-name: anim-check;
+ animation-duration: 1.2s;
+ opacity: 1;
+
+
+.logo-check {
+    color: $color-tertiary;
+    background-color: white;
+    font-size: 12px;
+    padding: 3px 4px 3px 4px;
+    border-radius: 50%;
+    }
+}
+
+
+
+ 
+/*BOUTON COMMANDER*/
+.bouton-explorer button {
+    width: 185px;
 }
 
 }
