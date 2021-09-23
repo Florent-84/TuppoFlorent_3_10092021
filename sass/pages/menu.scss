@@ -139,17 +139,6 @@ strong {
     font-size: 15px;
 }
 
-/*ANIMATION DIV VALIDATION MENU*/
-@keyframes anim-check{
-    0% {
-        transform: scalex(0);
-    }    
-
-    100% {
-        transform: scalex(1);
-    }
-}
-
 /*ARTICLE BLOCK DESCRIPTION MENU*/
 .block-description-menu {   
     height: 70px;
@@ -160,11 +149,23 @@ strong {
     cursor: pointer;
 }
 
-.block-description-menu:hover {
+/*ANIMATION DIV VALIDATION MENU*/
+@keyframes anim-check{
+    0% {
+        transform: scalex(0);      
+    }    
 
-      .validation-menu {
+    100% {
+        transform: scalex(1);     
+    }
+}
+
+.block-description-menu:hover {
+   
+      .validation-menu { 
+        transform-origin: right;
         animation-name: anim-check;
-        animation-duration: 0.5s;
+        animation-duration: 0.8s;
         opacity: 1;
      
        .logo-check {
@@ -173,15 +174,14 @@ strong {
            font-size: 12px;
            padding: 3px 4px 3px 4px;
            border-radius: 50%;
-           transform: rotate(360deg);
-           transition: transform 1.5s cubic-bezier(.08,.29,.39,.99) ;
+           transform: rotate(720deg);
+           transition: transform 500ms cubic-bezier(.10,.39,.59,.99);
            }     
        }  
 }
 
 /*DIV VALIDATION MENU*/
 .validation-menu {
-    transform-origin: right;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,7 +200,7 @@ strong {
 
 .validation-menu:hover {
  animation-name: anim-check;
- animation-duration: 1.2s;
+ animation-duration: 0.8s;
  opacity: 1;
 
 
