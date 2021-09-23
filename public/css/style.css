@@ -439,6 +439,7 @@ i.fas.fa-store:hover {
   /*titre du menu*/
   /*contenair des menus*/
   /*sous titre du menu*/
+  /*ARTICLE: TITRE ,SOUSTITRE, PRIX ET ANIMATION CHECK*/
 }
 .contenair_menu .titre__menu {
   font-family: "Shrikhand";
@@ -512,12 +513,54 @@ i.fas.fa-store:hover {
   border-color: #99e2d0;
 }
 .contenair_menu .block-description-menu {
+  width: 350px;
   height: 70px;
   background-color: white;
   margin-bottom: 13px;
   border-radius: 15px;
   box-shadow: 0px 5px 10px rgba(27, 27, 27, 0.1);
   cursor: pointer;
+}
+.contenair_menu .validation-menu {
+  position: relative;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: none;
+  bottom: 55px;
+  width: 58px;
+  height: 70px;
+  left: 297px;
+  background-color: #99e2d0;
+  cursor: pointer;
+  opacity: 0;
+}
+.contenair_menu .block-description-menu:hover {
+  animation-name: anim-check;
+  animation-duration: 1s;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: none;
+  position: relative;
+  bottom: 55px;
+  width: 58px;
+  height: 70px;
+  left: 297px;
+  background-color: #99e2d0;
+  cursor: pointer;
+  opacity: 1;
+}
+.contenair_menu .block-description-menu:hover .logo-validation:hover {
+  transform: rotate(360deg);
+  transition: transform 1.5s cubic-bezier(0.3, 0.7, 0.4, 1.5) 300ms;
+}
+.contenair_menu .logo-validation {
+  background-color: white;
+  color: #99e2d0;
+  border-radius: 50%;
+  font-size: 13px;
+  padding: 4px;
+  transform: rotate(360deg);
+  transition: transform 1.5s cubic-bezier(0.3, 0.7, 0.4, 1.5) 300ms;
 }
 .contenair_menu h3 {
   margin: 0px;
@@ -565,38 +608,6 @@ i.fas.fa-store:hover {
   100% {
     transform: scaleX(1);
   }
-}
-.contenair_menu .validation-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border: none;
-  bottom: 55px;
-  width: 58px;
-  height: 70px;
-  left: 297px;
-  background-color: #99e2d0;
-  cursor: pointer;
-  opacity: 0;
-}
-.contenair_menu .validation-menu:hover {
-  animation-name: anim-check;
-  animation-duration: 1s;
-  opacity: 1;
-}
-.contenair_menu .fas.fa-check {
-  background-color: white;
-  color: #99e2d0;
-  border-radius: 50%;
-  font-size: 13px;
-  padding: 4px;
-}
-.contenair_menu .fas.fa-check:hover {
-  transform: rotate(360deg);
-  transition: transform 1.5s cubic-bezier(0.3, 0.7, 0.4, 1.5) 300ms;
 }
 
 /*# sourceMappingURL=style.css.map */
