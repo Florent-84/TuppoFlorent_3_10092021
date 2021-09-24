@@ -554,7 +554,7 @@ body {
   animation-duration: 0.8s;
   opacity: 1;
 }
-.contenair_menu .block-description-menu:hover .validation-menu .logo-check {
+.contenair_menu .block-description-menu:hover .logo-check {
   color: #99e2d0;
   background-color: white;
   font-size: 12px;
@@ -579,12 +579,7 @@ body {
   cursor: pointer;
   opacity: 0;
 }
-.contenair_menu .validation-menu:hover {
-  animation-name: anim-check;
-  animation-duration: 0.8s;
-  opacity: 1;
-}
-.contenair_menu .validation-menu:hover .logo-check {
+.contenair_menu .logo-check {
   color: #99e2d0;
   background-color: white;
   font-size: 12px;

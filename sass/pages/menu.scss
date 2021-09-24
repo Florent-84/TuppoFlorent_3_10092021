@@ -160,25 +160,26 @@ strong {
     }
 }
 
-.block-description-menu:hover {
-   
-      .validation-menu { 
+.block-description-menu:hover { 
+
+      .validation-menu {
         transform-origin: right;
-        animation-name: anim-check;
+        animation-name: anim-check;          
         animation-duration: 0.8s;
         opacity: 1;
-     
+        }
+
        .logo-check {
-           color: $color-tertiary;
-           background-color: white;
-           font-size: 12px;
-           padding: 3px 4px 3px 4px;
-           border-radius: 50%;
-           transform: rotate(720deg);
-           transition: transform 500ms cubic-bezier(.10,.39,.59,.99);
-           }     
-       }  
+        color: $color-tertiary;
+        background-color: white;
+        font-size: 12px;
+        padding: 3px 4px 3px 4px;
+        border-radius: 50%;
+        transform: rotate(720deg);
+        transition: transform 500ms cubic-bezier(.10,.39,.59,.99);
+        }
 }
+
 
 /*DIV VALIDATION MENU*/
 .validation-menu {
@@ -198,11 +199,6 @@ strong {
     opacity: 0;   
 }
 
-.validation-menu:hover {
- animation-name: anim-check;
- animation-duration: 0.8s;
- opacity: 1;
-
 
 .logo-check {
     color: $color-tertiary;
@@ -211,10 +207,6 @@ strong {
     padding: 3px 4px 3px 4px;
     border-radius: 50%;
     }
-}
-
-
-
  
 /*BOUTON COMMANDER*/
 .bouton-explorer button {
