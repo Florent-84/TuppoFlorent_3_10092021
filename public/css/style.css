@@ -137,6 +137,9 @@ body {
 .choisissez:hover {
   background: #f5edff;
 }
+.choisissez:hover .logomobile {
+  color: #9356dc;
+}
 
 .composez {
   width: 325px;
@@ -154,6 +157,9 @@ body {
 }
 .composez:hover {
   background: #f5edff;
+}
+.composez:hover .liste {
+  color: #9356dc;
 }
 
 .degustez {
@@ -173,41 +179,26 @@ body {
 .degustez:hover {
   background: #f5edff;
 }
+.degustez:hover .store {
+  color: #9356dc;
+}
 
 .logomobile {
   font-size: 20px;
   margin-right: 28px;
+  color: #7e7e7e;
 }
 
 .liste {
   font-size: 18px;
   margin-right: 20px;
+  color: #7e7e7e;
 }
 
 .store {
   font-size: 16px;
   margin-right: 20px;
-}
-
-i.fas.fa-mobile-alt {
-  color: #797979;
-}
-i.fas.fa-mobile-alt:hover {
-  color: #9356dc;
-}
-
-i.fas.fa-list-ul {
-  color: #797979;
-}
-i.fas.fa-list-ul:hover {
-  color: #9356dc;
-}
-
-i.fas.fa-store {
-  color: #797979;
-}
-i.fas.fa-store:hover {
-  color: #9356dc;
+  color: #7e7e7e;
 }
 
 .fonctionnement {
@@ -439,7 +430,10 @@ i.fas.fa-store:hover {
   /*titre du menu*/
   /*contenair des menus*/
   /*sous titre du menu*/
-  /*ARTICLE: TITRE ,SOUSTITRE, PRIX ET ANIMATION CHECK*/
+  /*ARTICLE BLOCK DESCRIPTION MENU*/
+  /*ANIMATION DIV VALIDATION MENU*/
+  /*DIV VALIDATION MENU*/
+  /*BOUTON COMMANDER*/
 }
 .contenair_menu .titre__menu {
   font-family: "Shrikhand";
@@ -512,56 +506,6 @@ i.fas.fa-store:hover {
   width: 40px;
   border-color: #99e2d0;
 }
-.contenair_menu .block-description-menu {
-  width: 350px;
-  height: 70px;
-  background-color: white;
-  margin-bottom: 13px;
-  border-radius: 15px;
-  box-shadow: 0px 5px 10px rgba(27, 27, 27, 0.1);
-  cursor: pointer;
-}
-.contenair_menu .validation-menu {
-  position: relative;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border: none;
-  bottom: 55px;
-  width: 58px;
-  height: 70px;
-  left: 297px;
-  background-color: #99e2d0;
-  cursor: pointer;
-  opacity: 0;
-}
-.contenair_menu .block-description-menu:hover {
-  animation-name: anim-check;
-  animation-duration: 1s;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border: none;
-  position: relative;
-  bottom: 55px;
-  width: 58px;
-  height: 70px;
-  left: 297px;
-  background-color: #99e2d0;
-  cursor: pointer;
-  opacity: 1;
-}
-.contenair_menu .block-description-menu:hover .logo-validation:hover {
-  transform: rotate(360deg);
-  transition: transform 1.5s cubic-bezier(0.3, 0.7, 0.4, 1.5) 300ms;
-}
-.contenair_menu .logo-validation {
-  background-color: white;
-  color: #99e2d0;
-  border-radius: 50%;
-  font-size: 13px;
-  padding: 4px;
-  transform: rotate(360deg);
-  transition: transform 1.5s cubic-bezier(0.3, 0.7, 0.4, 1.5) 300ms;
-}
 .contenair_menu h3 {
   margin: 0px;
   margin-top: 10px;
@@ -588,26 +532,62 @@ i.fas.fa-store:hover {
   color: #464646;
   font-size: 15px;
 }
-.contenair_menu .bouton-explorer button {
-  width: 185px;
+.contenair_menu .block-description-menu {
+  height: 70px;
+  background-color: white;
+  margin-bottom: 13px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px rgba(27, 27, 27, 0.1);
+  cursor: pointer;
 }
 @keyframes anim-check {
   0% {
-    transform: scaleX(0);
-    opacity: 0.5;
-  }
-  17% {
-    transform: scaleX(0.18);
-  }
-  24% {
-    transform: scaleX(0.4);
-  }
-  46% {
-    transform: scaleX(0.81);
+    transform: scalex(0);
   }
   100% {
-    transform: scaleX(1);
+    transform: scalex(1);
   }
+}
+.contenair_menu .block-description-menu:hover .validation-menu {
+  transform-origin: right;
+  animation-name: anim-check;
+  animation-duration: 0.8s;
+  opacity: 1;
+}
+.contenair_menu .block-description-menu:hover .logo-check {
+  color: #99e2d0;
+  background-color: white;
+  font-size: 12px;
+  padding: 3px 4px 3px 4px;
+  border-radius: 50%;
+  transform: rotate(720deg);
+  transition: transform 500ms cubic-bezier(0.1, 0.39, 0.59, 0.99);
+}
+.contenair_menu .validation-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: none;
+  bottom: 55px;
+  width: 58px;
+  height: 70px;
+  left: 297px;
+  background-color: #99e2d0;
+  cursor: pointer;
+  opacity: 0;
+}
+.contenair_menu .logo-check {
+  color: #99e2d0;
+  background-color: white;
+  font-size: 12px;
+  padding: 3px 4px 3px 4px;
+  border-radius: 50%;
+}
+.contenair_menu .bouton-explorer button {
+  width: 185px;
 }
 
 /*# sourceMappingURL=style.css.map */
