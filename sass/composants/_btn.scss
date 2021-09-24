@@ -78,13 +78,19 @@
 text-align: right;
      &:hover{
          background: #f5edff ;
+         .logomobile {
+            color: #9356dc;
+        }
      }
 }
 
 .composez {
     @include btn-fonctionnement-style;
     &:hover{
-        background: #f5edff ;
+        background: #f5edff;
+        .liste {
+            color: #9356dc;
+        }
     }   
 }
 
@@ -92,43 +98,29 @@ text-align: right;
     @include btn-fonctionnement-style;
     &:hover{
         background: #f5edff;
+        .store {
+            color: #9356dc;
+        }
     } 
 }
 
 .logomobile {
-font-size: 20px;
-margin-right: 28px;
+    font-size: 20px;
+    margin-right: 28px;
+    color: #7e7e7e;
 }
 
 .liste { 
     font-size: 18px;
     margin-right: 20px;
+    color: #7e7e7e;
 }
 
 .store {
     font-size: 16px;
     margin-right: 20px;
+    color: #7e7e7e;
  }
 
-i.fas.fa-mobile-alt {
-    color: $color-logo-menu;
-    &:hover {
-        color: $color-primary; 
- }
-}
-
-i.fas.fa-list-ul {
-    color: $color-logo-menu;
-    &:hover {
-        color: $color-primary; 
- } 
-}
-
-
-i.fas.fa-store {
-    color: $color-logo-menu;
-    &:hover {
-    color: $color-primary; 
- }
-}
+ 
 
