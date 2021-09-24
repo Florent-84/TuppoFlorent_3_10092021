@@ -548,19 +548,19 @@ body {
     transform: scalex(1);
   }
 }
-.contenair_menu .block-description-menu:hover .validation-menu {
+.contenair_menu .block-description-menu:active .validation-menu {
   transform-origin: right;
   animation-name: anim-check;
-  animation-duration: 0.8s;
+  animation-duration: 50ms;
   opacity: 1;
 }
-.contenair_menu .block-description-menu:hover .logo-check {
+.contenair_menu .block-description-menu:active .logo-check {
   color: #99e2d0;
   background-color: white;
   font-size: 12px;
   padding: 3px 4px 3px 4px;
   border-radius: 50%;
-  transform: rotate(720deg);
+  transform: rotate(360deg);
   transition: transform 500ms cubic-bezier(0.1, 0.39, 0.59, 0.99);
 }
 .contenair_menu .validation-menu {
@@ -588,6 +588,10 @@ body {
 }
 .contenair_menu .bouton-explorer button {
   width: 185px;
+}
+
+.contenair_menu-deux {
+  height: 1190px;
 }
 
 /*# sourceMappingURL=style.css.map */

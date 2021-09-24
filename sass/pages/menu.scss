@@ -160,12 +160,13 @@ strong {
     }
 }
 
-.block-description-menu:hover { 
+.block-description-menu:active {    
 
-      .validation-menu {
+ 
+       .validation-menu {
         transform-origin: right;
         animation-name: anim-check;          
-        animation-duration: 0.8s;
+        animation-duration: 50ms;
         opacity: 1;
         }
 
@@ -175,7 +176,7 @@ strong {
         font-size: 12px;
         padding: 3px 4px 3px 4px;
         border-radius: 50%;
-        transform: rotate(720deg);
+        transform: rotate(360deg);
         transition: transform 500ms cubic-bezier(.10,.39,.59,.99);
         }
 }
@@ -214,4 +215,10 @@ strong {
 }
 
 }
+
+.contenair_menu-deux {
+    height: 1190px;
+}
+
+
 
