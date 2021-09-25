@@ -288,64 +288,43 @@ body {
 .restaurants .soustitremenilmontant, .restaurants .soustitrecharonne, .restaurants .soustitreciterouge, .restaurants .soustitrefoliemericourt {
   margin: 5px 0px 0px 12px;
 }
-.restaurants .far.fa-heart {
+.restaurants .contenair_logo {
   margin: 20px;
   height: 20px;
+  height: 23px;
   font-size: 23px;
   color: #848484;
   display: flex;
-  justify-content: center;
+  background-clip: text;
 }
-
-.fas.fa-heart {
-  display: flex;
-  color: transparent;
+.restaurants .logo-coeur-vide {
   position: relative;
-  left: 90px;
-  top: 20px;
-  font-size: 22px;
-  height: 20px;
+  left: 23px;
 }
-
-.container-restaurant__alafrancaise .fas.fa-heart {
-  color: transparent;
+.restaurants .logo-coeur-plein {
   position: relative;
-  left: 108px;
-  top: 20px;
-  font-size: 22px;
-  height: 20px;
-}
-
-.container-restaurant__ledelicedessens .fas.fa-heart {
   color: transparent;
-  position: relative;
-  left: 90px;
-  top: 20px;
-  font-size: 22px;
-  height: 20px;
 }
-
-@keyframes animcoeur {
+@keyframes anim-coeur {
   0% {
-    background-color: transparent;
+    color: transparent;
   }
-  25% {
-    background-color: #ffe0f6;
+  20% {
+    color: #ffd6f4;
   }
-  50% {
-    background-color: #ff79da;
+  40% {
+    color: #ffb4ea;
+  }
+  70% {
+    color: #ff79da;
   }
   100% {
-    background-color: #9356dc;
+    color: #9356dc;
   }
 }
-.fas.fa-heart:hover {
-  animation-name: animcoeur;
-  animation-duration: 2s;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  color: transparent;
+.restaurants .logo-coeur-plein:hover {
+  animation-name: anim-coeur;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
@@ -445,48 +424,45 @@ body {
   display: flex;
   justify-content: space-between;
   height: 70px;
-  /*logo coeur vide*/
-  /*logo coeur plein*/
-  /* animation logo coeur plein*/
 }
-.contenair_menu .container-texte-logo .far.fa-heart::before {
+.contenair_menu .container-texte-logo .contenair_logo {
   margin: 20px;
-  margin-top: 30px;
+  margin-top: 27px;
+  margin-right: 27px;
+  height: 23px;
   font-size: 23px;
   color: #848484;
   display: flex;
-  justify-content: center;
+  background-clip: text;
 }
-.contenair_menu .container-texte-logo .fas.fa-heart {
+.contenair_menu .container-texte-logo .logo-coeur-vide {
   position: relative;
-  left: 45px;
-  top: 30px;
-  margin-left: 4px;
+  left: 23px;
 }
-@keyframes animcoeur {
+.contenair_menu .container-texte-logo .logo-coeur-plein {
+  position: relative;
+  color: transparent;
+}
+@keyframes anim-coeur {
   0% {
-    background-color: transparent;
+    color: transparent;
   }
-  25% {
-    background-color: #ffe0f6;
+  20% {
+    color: #ffd6f4;
   }
-  50% {
-    background-color: #ff79da;
+  40% {
+    color: #ffb4ea;
+  }
+  70% {
+    color: #ff79da;
   }
   100% {
-    background-color: #9356dc;
+    color: #9356dc;
   }
 }
-.contenair_menu .container-texte-logo .fas.fa-heart:hover {
-  position: relative;
-  left: 45px;
-  top: 30px;
-  font-size: 23px;
-  height: 20px;
-  animation-name: animcoeur;
-  animation-duration: 2s;
-  background-clip: text;
-  color: transparent;
+.contenair_menu .container-texte-logo .logo-coeur-plein:hover {
+  animation-name: anim-coeur;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 .contenair_menu .contenair-article {

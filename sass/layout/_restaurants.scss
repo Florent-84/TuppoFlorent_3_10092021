@@ -86,61 +86,54 @@
     margin:5px 0px 0px 12px;
 }
 
-.far.fa-heart {    
+
+.contenair_logo {    
     margin: 20px;
     height: 20px;
+    height: 23px;
     font-size: 23px;
     color: #848484;
     display: flex;
-    justify-content: center;  
-}
-      
+    background-clip: text;  
 }
 
-.fas.fa-heart {
-    display: flex;
-    color: transparent;
+.logo-coeur-vide {
     position: relative;
-    left: 90px;
-    top: 20px;
-    font-size: 22px;
-    height: 20px;    
+    left: 23px;
 }
 
-.container-restaurant__alafrancaise .fas.fa-heart {
-    color: transparent;
+.logo-coeur-plein {
     position: relative;
-    left: 108px;
-    top: 20px;
-    font-size: 22px;
-    height: 20px;
-}
-
-.container-restaurant__ledelicedessens .fas.fa-heart {
     color: transparent;
-    position: relative;
-    left: 90px;
-    top: 20px;
-    font-size: 22px;
-    height: 20px;
 }
- 
- @keyframes animcoeur {
-      0%  {background-color: transparent}
-     25% {background-color: #ffe0f6 }
-     50%  {background-color: $color-secondary}
-    100%  {background-color: $color-primary }
- }
+
+@keyframes anim-coeur {
+    0% {
+        color: (transparent);      
+    }
+    20% {
+        color: (#ffd6f4);      
+    } 
+    40% {
+        color: (#ffb4ea);      
+    }
+    70% {
+        color: ($color-secondary);      
+    }   
+    100% {
+        color: ($color-primary);     
+    }
+}
+
+.logo-coeur-plein:hover {
+   animation-name: anim-coeur;
+   animation-duration: 1s; 
+   animation-fill-mode: forwards;
+}
+
+}
 
 
- .fas.fa-heart:hover {
-     animation-name: animcoeur;
-     animation-duration: 2s;
-     background-clip:text;
-     -webkit-background-clip:text;
-     -moz-background-clip:text;
-     color:transparent; 
-     animation-fill-mode: forwards;
-}
+
 
 
