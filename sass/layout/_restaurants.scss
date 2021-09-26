@@ -12,9 +12,8 @@
 .container-restaurants {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     height: 1060px;
-    padding-left: 20px;
 }
 
 .container-restaurant__lapalettedugout, .container-restaurant__lanoteenchantee, .container-restaurant__alafrancaise, .container-restaurant__ledelicedessens {
@@ -127,7 +126,7 @@
 
 .logo-coeur-plein:hover {
    animation-name: anim-coeur;
-   animation-duration: 1s; 
+   animation-duration: 2s; 
    animation-fill-mode: forwards;
 }
 

@@ -229,9 +229,8 @@ body {
 .restaurants .container-restaurants {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   height: 1060px;
-  padding-left: 20px;
 }
 .restaurants .container-restaurant__lapalettedugout, .restaurants .container-restaurant__lanoteenchantee, .restaurants .container-restaurant__alafrancaise, .restaurants .container-restaurant__ledelicedessens {
   height: 250px;
@@ -324,7 +323,7 @@ body {
 }
 .restaurants .logo-coeur-plein:hover {
   animation-name: anim-coeur;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
@@ -462,7 +461,7 @@ body {
 }
 .contenair_menu .container-texte-logo .logo-coeur-plein:hover {
   animation-name: anim-coeur;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 .contenair_menu .contenair-article {
@@ -498,12 +497,6 @@ body {
   font-size: 15px;
   margin-left: 10px;
 }
-.contenair_menu p {
-  margin: 0px;
-  margin-left: 10px;
-  font-size: 15px;
-  font-weight: lighter;
-}
 .contenair_menu strong {
   color: #464646;
   font-size: 15px;
@@ -524,13 +517,24 @@ body {
     transform: scalex(1);
   }
 }
-.contenair_menu .block-description-menu:active .validation-menu {
+.contenair_menu .block-description-menu:hover {
+  transform: scale(1.02);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.contenair_menu .block-description-menu:hover .intitule-prix {
+  width: 280px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.contenair_menu .block-description-menu:hover .validation-menu {
   transform-origin: right;
   animation-name: anim-check;
-  animation-duration: 50ms;
+  animation-duration: 600ms;
   opacity: 1;
 }
-.contenair_menu .block-description-menu:active .logo-check {
+.contenair_menu .block-description-menu:hover .logo-check {
   color: #99e2d0;
   background-color: white;
   font-size: 12px;

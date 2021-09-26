@@ -86,7 +86,7 @@
         
         .logo-coeur-plein:hover {
            animation-name: anim-coeur;
-           animation-duration: 1s; 
+           animation-duration: 2s; 
            animation-fill-mode: forwards;
         }
         
@@ -135,13 +135,6 @@ h3 {
     margin-left: 10px;
 }
 
-p {
-    margin:0px;
-    margin-left: 10px;
-    font-size: 15px;
-    font-weight: lighter;
-}
-
 strong {
     color: #464646;
     font-size: 15px;
@@ -157,6 +150,7 @@ strong {
     cursor: pointer;
 }
 
+
 /*ANIMATION DIV VALIDATION MENU*/
 @keyframes anim-check{
     0% {
@@ -168,13 +162,24 @@ strong {
     }
 }
 
-.block-description-menu:active {    
 
+.block-description-menu:hover { 
+    transform: scale(1.02);
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    
+    
+    .intitule-prix {
+        width: 280px;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
  
        .validation-menu {
         transform-origin: right;
         animation-name: anim-check;          
-        animation-duration: 50ms;
+        animation-duration: 600ms;
         opacity: 1;
         }
 
