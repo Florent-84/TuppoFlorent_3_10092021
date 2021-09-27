@@ -418,6 +418,7 @@ body {
   font-size: 27px;
   font-weight: normal;
   margin-top: 20px;
+  margin-left: 10px;
 }
 .contenair_menu .container-texte-logo {
   display: flex;
@@ -482,32 +483,43 @@ body {
   border-color: #99e2d0;
 }
 .contenair_menu h3 {
+  width: max-content;
   margin: 0px;
   margin-top: 10px;
   margin-left: 10px;
-  font-size: 17px;
+  font-size: 1.01em;
   letter-spacing: -0.5px;
-  padding-top: 15px;
   padding-bottom: 3px;
 }
-.contenair_menu .intitule-prix {
-  width: 325px;
-  display: flex;
-  justify-content: space-between;
+.contenair_menu .intitule {
+  width: 300px;
   font-size: 15px;
   margin-left: 10px;
 }
 .contenair_menu strong {
+  height: 15px;
+  margin-top: 39px;
+  align-content: center;
+  display: flex;
   color: #464646;
   font-size: 15px;
 }
 .contenair_menu .block-description-menu {
+  display: flex;
+  justify-content: space-between;
   height: 70px;
   background-color: white;
   margin-bottom: 13px;
   border-radius: 15px;
   box-shadow: 0px 5px 10px rgba(27, 27, 27, 0.1);
   cursor: pointer;
+}
+.contenair_menu .titre-soustitre {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 50px;
 }
 @keyframes anim-check {
   0% {
@@ -517,24 +529,22 @@ body {
     transform: scalex(1);
   }
 }
-.contenair_menu .block-description-menu:hover {
+.contenair_menu .block-description-menu:active {
   transform: scale(1.02);
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
-.contenair_menu .block-description-menu:hover .intitule-prix {
-  width: 280px;
+.contenair_menu .block-description-menu:active .intitule {
+  width: 230px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-.contenair_menu .block-description-menu:hover .validation-menu {
+.contenair_menu .block-description-menu:active .validation-menu {
   transform-origin: right;
   animation-name: anim-check;
   animation-duration: 600ms;
   opacity: 1;
 }
-.contenair_menu .block-description-menu:hover .logo-check {
+.contenair_menu .block-description-menu:active .logo-check {
   color: #99e2d0;
   background-color: white;
   font-size: 12px;
@@ -547,14 +557,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  border: none;
-  bottom: 55px;
   width: 58px;
-  height: 70px;
-  left: 297px;
   background-color: #99e2d0;
   cursor: pointer;
   opacity: 0;

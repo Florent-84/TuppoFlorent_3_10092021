@@ -34,7 +34,8 @@
     font-family: "Shrikhand";
     font-size: 27px;
     font-weight: normal;
-    margin-top: 20px; 
+    margin-top: 20px;
+    margin-left: 10px; 
 }
     .titre__menu {
      @include titre-menu
@@ -118,41 +119,52 @@
 }
 
 h3 {
+   width: max-content;
    margin: 0px;
    margin-top: 10px;
    margin-left: 10px;
-   font-size: 17px;
+   font-size: 1.01em;
    letter-spacing: -0.5px;
-   padding-top: 15px;
    padding-bottom: 3px;
 }
 
-.intitule-prix {
-    width: 325px;
-    display: flex;
-    justify-content: space-between;
+.intitule {
+    width: 300px;
     font-size: 15px;
     margin-left: 10px;
 }
-
 strong {
+    height: 15px;
+    margin-top: 39px;
+    align-content: center;
+    display: flex;
     color: #464646;
     font-size: 15px;
 }
 
 /*ARTICLE BLOCK DESCRIPTION MENU*/
-.block-description-menu {   
+.block-description-menu {
+    display: flex;
+    justify-content: space-between;   
     height: 70px;
     background-color: white;
     margin-bottom: 13px;
     border-radius: 15px;
     box-shadow: 0px 5px 10px rgb(27 27 27 / 10%);
-    cursor: pointer;
+    cursor: pointer;  
+}
+
+.titre-soustitre {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 50px;
 }
 
 
 /*ANIMATION DIV VALIDATION MENU*/
-@keyframes anim-check{
+@keyframes anim-check {
     0% {
         transform: scalex(0);      
     }    
@@ -163,19 +175,15 @@ strong {
 }
 
 
-.block-description-menu:hover { 
+.block-description-menu:active { 
     transform: scale(1.02);
-    text-overflow:ellipsis;
-    white-space: nowrap;
-    
-    
-    .intitule-prix {
-        width: 280px;
+
+    .intitule {
+        width: 230px;
         text-overflow:ellipsis;
         white-space: nowrap;
         overflow: hidden;
     }
- 
        .validation-menu {
         transform-origin: right;
         animation-name: anim-check;          
@@ -200,14 +208,9 @@ strong {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    border: none;
-    bottom: 55px;
     width: 58px;
-    height: 70px;
-    left: 297px;
     background-color: $color-tertiary;
     cursor: pointer;
     opacity: 0;   
