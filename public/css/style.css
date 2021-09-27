@@ -3,6 +3,40 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+@keyframes pageblanche {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.page__loader {
+  animation: pageblanche ease-in-out 5s;
+}
+.page__loader .loader {
+  animation: spin 0.8s infinite;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 70px;
+  height: 60px;
+  border-top: 5px solid #9356dc;
+  border-bottom: 5px solid #ff47cb;
+  border-radius: 50%;
+  margin: 0px 0px 0px -33px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
 .header-logo {
   text-align: center;
   height: 65px;
@@ -136,6 +170,7 @@ body {
 }
 .choisissez:hover {
   background: #f5edff;
+  box-shadow: 0px 5px 10px rgba(27, 27, 27, 0.2);
 }
 .choisissez:hover .logomobile {
   color: #9356dc;
@@ -157,6 +192,7 @@ body {
 }
 .composez:hover {
   background: #f5edff;
+  box-shadow: 0px 5px 10px rgba(27, 27, 27, 0.2);
 }
 .composez:hover .liste {
   color: #9356dc;
@@ -178,6 +214,7 @@ body {
 }
 .degustez:hover {
   background: #f5edff;
+  box-shadow: 0px 5px 10px rgba(27, 27, 27, 0.2);
 }
 .degustez:hover .store {
   color: #9356dc;
@@ -234,6 +271,11 @@ body {
 }
 .restaurants .container-restaurant__lapalettedugout, .restaurants .container-restaurant__lanoteenchantee, .restaurants .container-restaurant__alafrancaise, .restaurants .container-restaurant__ledelicedessens {
   height: 250px;
+}
+.restaurants .container-restaurant__lapalettedugout:hover, .restaurants .container-restaurant__lanoteenchantee:hover, .restaurants .container-restaurant__alafrancaise:hover, .restaurants .container-restaurant__ledelicedessens:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 5px 10px rgba(27, 27, 27, 0.2);
+  border-radius: 10px;
 }
 .restaurants #restaurant-un, .restaurants #restaurant-deux, .restaurants #restaurant-trois, .restaurants #restaurant-quatre {
   width: 335px;
@@ -465,11 +507,24 @@ body {
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .contenair_menu .contenair-article {
   margin-bottom: 30px;
+  animation: apparition ease-in-out 1s;
 }
 .contenair_menu .contenair-article-plats {
   margin-bottom: 45px;
+  animation: apparition ease-in-out 2.5s;
+}
+.contenair_menu .contenair-article-plats-dessert {
+  animation: apparition ease-in-out 4s;
 }
 .contenair_menu .sous-titre__menu {
   margin-left: 10px;

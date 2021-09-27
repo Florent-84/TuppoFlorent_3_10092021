@@ -17,7 +17,13 @@
 }
 
 .container-restaurant__lapalettedugout, .container-restaurant__lanoteenchantee, .container-restaurant__alafrancaise, .container-restaurant__ledelicedessens {
-    height: 250px; 
+    height: 250px;
+}
+
+.container-restaurant__lapalettedugout:hover, .container-restaurant__lanoteenchantee:hover, .container-restaurant__alafrancaise:hover, .container-restaurant__ledelicedessens:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 5px 10px rgb(27 27 27 / 20%);
+    border-radius: 10px;
 }
 
 #restaurant-un , #restaurant-deux, #restaurant-trois, #restaurant-quatre {
