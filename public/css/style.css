@@ -5,17 +5,37 @@ body {
 
 @keyframes pageblanche {
   0% {
-    opacity: 0;
+    background-color: white;
+    opacity: 1;
+  }
+  66% {
+    background-color: white;
+    opacity: 1;
   }
   100% {
-    opacity: 1;
+    background-color: transparent;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 .page__loader {
-  animation: pageblanche ease-in-out 5s;
+  animation: pageblanche 3s ease-in-out;
+  animation-fill-mode: forwards;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  background-color: #fff;
 }
-.page__loader .loader {
-  animation: spin 0.8s infinite;
+
+.loader {
+  animation-name: spin;
+  animation-duration: 3.5s;
+  animation-fill-mode: forwards;
   position: fixed;
   left: 50%;
   top: 50%;
@@ -25,18 +45,52 @@ body {
   border-bottom: 5px solid #ff47cb;
   border-radius: 50%;
   margin: 0px 0px 0px -33px;
+  z-index: 2;
+}
+
+.loader-deux {
+  animation-name: spin;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 70px;
+  height: 60px;
+  border-top: 5px solid #ff47cb;
+  border-bottom: 5px solid #9356dc;
+  border-radius: 45%;
+  margin: 0px 0px 0px -33px;
+  z-index: 2;
 }
 
 @keyframes spin {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
     opacity: 1;
   }
+  66% {
+    opacity: 0.5;
+  }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(2500deg);
     opacity: 0;
   }
 }
+.patienter {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  width: 150px;
+  height: 25px;
+  margin-bottom: 70px;
+  border-radius: 23px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+}
+
 .header-logo {
   text-align: center;
   height: 65px;
@@ -156,7 +210,6 @@ body {
 .choisissez {
   width: 325px;
   height: 75px;
-  margin-left: 25px;
   padding-right: 50px;
   border-radius: 25px;
   border: none;
@@ -179,7 +232,6 @@ body {
 .composez {
   width: 325px;
   height: 75px;
-  margin-left: 25px;
   padding-right: 50px;
   border-radius: 25px;
   border: none;
@@ -201,7 +253,6 @@ body {
 .degustez {
   width: 325px;
   height: 75px;
-  margin-left: 25px;
   padding-right: 50px;
   border-radius: 25px;
   border: none;
@@ -248,7 +299,7 @@ body {
 .fonctionnement .btn-fonctionnement {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 270px;
 }
 
