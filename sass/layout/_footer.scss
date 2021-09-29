@@ -31,6 +31,15 @@ li {
     padding-bottom: 7px;
 }
 
+li:hover {
+  color: $color-secondary;
+}
+
+
+a:hover {
+  color: $color-secondary;
+}
+
 a {
     text-decoration: none;
     color: white;

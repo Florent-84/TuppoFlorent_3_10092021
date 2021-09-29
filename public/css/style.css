@@ -449,6 +449,12 @@ body {
 .footer-container li {
   padding-bottom: 7px;
 }
+.footer-container li:hover {
+  color: #ff79da;
+}
+.footer-container a:hover {
+  color: #ff79da;
+}
 .footer-container a {
   text-decoration: none;
   color: white;
@@ -568,14 +574,14 @@ body {
 }
 .contenair_menu .contenair-article {
   margin-bottom: 30px;
-  animation: apparition ease-in-out 1s;
+  animation: apparition ease-in-out 2s;
 }
 .contenair_menu .contenair-article-plats {
   margin-bottom: 45px;
-  animation: apparition ease-in-out 2.5s;
+  animation: apparition ease-in-out 3.5s;
 }
 .contenair_menu .contenair-article-plats-dessert {
-  animation: apparition ease-in-out 4s;
+  animation: apparition ease-in-out 5s;
 }
 .contenair_menu .sous-titre__menu {
   margin-left: 10px;
