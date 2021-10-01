@@ -1,0 +1,42 @@
+@media only screen and (min-width: 600px) { 
+
+  .restaurants {
+    height: 660px;
+}
+
+  .restaurants .container-restaurants {
+    height: auto;
+}
+
+.restaurants .container-restaurant__lapalettedugout, .restaurants .container-restaurant__lanoteenchantee, .restaurants .container-restaurant__alafrancaise, .restaurants .container-restaurant__ledelicedessens {
+  width: 100%;
+}
+
+.contenair-double-menu-un {
+  display: flex;
+  height: 260px; 
+}
+
+.contenair-double-menu-deux {
+  display: flex;
+  height: 260px;
+}
+
+  .footer-container .footer-container__menu {
+    flex-direction: row;  
+    justify-content: space-between;
+    padding-top: 25px;
+  }
+  .encart-nouveau-un {
+    position: absolute;
+    top: 955px;
+    right: 320px;
+}
+
+.encart-nouveau-deux {
+    position: absolute;
+    right: 20px;
+    top: 1215px; 
+}
+}
+

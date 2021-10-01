@@ -7,6 +7,7 @@
     padding-top: 50px;
     padding-left: 20px;
     letter-spacing: -0.5px;
+    margin-top: 0px;
 }
 
 .container-restaurants {
@@ -16,18 +17,27 @@
     height: 1060px;
 }
 
+.contenair-double-menu-un {
+    width: 100%;
+}
+
+.contenair-double-menu-deux {
+    width: 100%;
+}
+
+
+
 .container-restaurant__lapalettedugout, .container-restaurant__lanoteenchantee, .container-restaurant__alafrancaise, .container-restaurant__ledelicedessens {
     height: 250px;
+    margin: 10px;
 }
 
 .container-restaurant__lapalettedugout:hover, .container-restaurant__lanoteenchantee:hover, .container-restaurant__alafrancaise:hover, .container-restaurant__ledelicedessens:hover {
-    transform: scale(1.01);
     box-shadow: 0px 5px 10px rgb(27 27 27 / 20%);
     border-radius: 10px;
 }
 
 #restaurant-un , #restaurant-deux, #restaurant-trois, #restaurant-quatre {
-    width: 335px;
     height: 250px;
     margin: 0px;
     background-color: white;
@@ -44,23 +54,36 @@
 }
 
 /*affichette nouveau*/
-@mixin affichette-nouveau {
+.encart-nouveau-un {
     width: 80px;
     height: 22px;
     color: #008766;
     background-color: #99e2d0;
-    position: relative;
-    left: 245px;
     bottom: 237px;
     border-radius: 3px;
     text-align: center;
     font-weight: bold;
     font-size: 13px;
-    padding-top: 7px;  
+    padding-top: 7px;
+    position: absolute;
+    top: 955px;
+    right: 20px;
 }
 
-.encart-nouveau {
- @include affichette-nouveau;
+.encart-nouveau-deux {
+    width: 80px;
+    height: 22px;
+    color: #008766;
+    background-color: #99e2d0;
+    bottom: 237px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    padding-top: 7px;
+    position: absolute;
+    right: 20px;
+    top: 1215px; 
 }
 
 .lienphotorestaurant {

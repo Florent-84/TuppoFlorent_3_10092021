@@ -1,16 +1,18 @@
 
 .fonctionnement {
-    height: 395px;
+    height: 420px;
 
 .fonctionnement__titre{
     padding-top: 30px;
     margin-left: 20px;
+    margin-bottom: 40px;
 }
 
 .btn-fonctionnement {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: center;
     height: 270px;
 }
 
