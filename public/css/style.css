@@ -420,7 +420,6 @@ body {
   font-size: 23px;
   color: #848484;
   display: flex;
-  background-clip: text;
 }
 .restaurants .logo-coeur-vide {
   position: relative;
@@ -565,7 +564,6 @@ body {
   font-size: 23px;
   color: #848484;
   display: flex;
-  background-clip: text;
 }
 .contenair_menu .container-texte-logo .logo-coeur-vide {
   position: relative;
