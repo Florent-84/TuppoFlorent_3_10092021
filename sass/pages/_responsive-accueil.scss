@@ -1,4 +1,13 @@
-@media only screen and (min-width: 600px) { 
+@media only screen and (min-width: 600px) {
+ 
+  .fonctionnement .fonctionnement__titre {
+    text-align: center;
+    }
+    
+      .restaurants .restaurants__titre {
+    padding-left: 0px;
+    text-align: center;
+    }
 
   .restaurants {
     height: 660px;
@@ -27,16 +36,32 @@
     justify-content: space-between;
     padding-top: 25px;
   }
-  .encart-nouveau-un {
-    position: absolute;
-    top: 955px;
-    right: 320px;
 }
 
-.encart-nouveau-deux {
-    position: absolute;
-    right: 20px;
-    top: 1215px; 
+@media only screen and (min-width: 1075px) {
+
+  .fonctionnement .fonctionnement__titre {
+text-align: center;
 }
+
+  .restaurants .restaurants__titre {
+text-align: center;
 }
+
+.contenair_menu {
+  padding: 15px 120px 50px 120px;
+}
+
+  .restaurants {
+      height: 500px;
+  }
+  
+      .restaurants .contenair-double-menu-un {
+          width: 50%;
+      }
+  
+      .restaurants .contenair-double-menu-deux {
+          width: 50%;
+      }  
+  }
 
