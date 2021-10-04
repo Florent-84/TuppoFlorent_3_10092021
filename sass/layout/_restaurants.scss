@@ -53,13 +53,17 @@
     border-top-right-radius: 10px;
 }
 
+.lienphotorestaurant {
+    text-decoration: none;
+    color: black;
+}
+
 /*affichette nouveau*/
 .encart-nouveau-un {
     width: 80px;
     height: 22px;
     color: #008766;
     background-color: #99e2d0;
-    bottom: 237px;
     border-radius: 3px;
     text-align: center;
     font-weight: bold;
@@ -69,6 +73,7 @@
     top: 955px;
     right: 20px;
 }
+
 
 .encart-nouveau-deux {
     width: 80px;
@@ -84,11 +89,6 @@
     position: absolute;
     right: 20px;
     top: 1215px; 
-}
-
-.lienphotorestaurant {
-    text-decoration: none;
-    color: black;
 }
 
 .container-texte-logo {

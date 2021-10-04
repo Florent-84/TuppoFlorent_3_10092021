@@ -360,12 +360,15 @@ body {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+.restaurants .lienphotorestaurant {
+  text-decoration: none;
+  color: black;
+}
 .restaurants .encart-nouveau-un {
   width: 80px;
   height: 22px;
   color: #008766;
   background-color: #99e2d0;
-  bottom: 237px;
   border-radius: 3px;
   text-align: center;
   font-weight: bold;
@@ -389,10 +392,6 @@ body {
   position: absolute;
   right: 20px;
   top: 1215px;
-}
-.restaurants .lienphotorestaurant {
-  text-decoration: none;
-  color: black;
 }
 .restaurants .container-texte-logo {
   display: flex;
@@ -420,6 +419,7 @@ body {
   font-size: 23px;
   color: #848484;
   display: flex;
+  background-clip: text;
 }
 .restaurants .logo-coeur-vide {
   position: relative;
@@ -564,6 +564,7 @@ body {
   font-size: 23px;
   color: #848484;
   display: flex;
+  background-clip: text;
 }
 .contenair_menu .container-texte-logo .logo-coeur-vide {
   position: relative;
@@ -605,14 +606,14 @@ body {
 }
 .contenair_menu .contenair-article {
   margin-bottom: 30px;
-  animation: apparition ease-in-out 2s;
+  animation: apparition ease-in-out 1s;
 }
 .contenair_menu .contenair-article-plats {
   margin-bottom: 45px;
   animation: apparition ease-in-out 3.5s;
 }
 .contenair_menu .contenair-article-plats-dessert {
-  animation: apparition ease-in-out 5s;
+  animation: apparition ease-in-out 7s;
 }
 .contenair_menu .sous-titre__menu {
   margin-left: 10px;
@@ -723,6 +724,15 @@ body {
 }
 
 @media only screen and (min-width: 600px) {
+  .fonctionnement .fonctionnement__titre {
+    text-align: center;
+  }
+
+  .restaurants .restaurants__titre {
+    padding-left: 0px;
+    text-align: center;
+  }
+
   .restaurants {
     height: 660px;
   }
@@ -750,17 +760,30 @@ body {
     justify-content: space-between;
     padding-top: 25px;
   }
-
-  .encart-nouveau-un {
-    position: absolute;
-    top: 955px;
-    right: 320px;
+}
+@media only screen and (min-width: 1075px) {
+  .fonctionnement .fonctionnement__titre {
+    text-align: center;
   }
 
-  .encart-nouveau-deux {
-    position: absolute;
-    right: 20px;
-    top: 1215px;
+  .restaurants .restaurants__titre {
+    text-align: center;
+  }
+
+  .contenair_menu {
+    padding: 15px 120px 50px 120px;
+  }
+
+  .restaurants {
+    height: 500px;
+  }
+
+  .restaurants .contenair-double-menu-un {
+    width: 50%;
+  }
+
+  .restaurants .contenair-double-menu-deux {
+    width: 50%;
   }
 }
 @media only screen and (min-width: 600px) {
