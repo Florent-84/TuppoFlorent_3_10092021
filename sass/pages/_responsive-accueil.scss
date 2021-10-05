@@ -10,7 +10,7 @@
     }
 
   .restaurants {
-    height: 660px;
+    height: 660px;   
 }
 
   .restaurants .container-restaurants {
@@ -18,8 +18,10 @@
 }
 
 .restaurants .container-restaurant__lapalettedugout, .restaurants .container-restaurant__lanoteenchantee, .restaurants .container-restaurant__alafrancaise, .restaurants .container-restaurant__ledelicedessens {
-  width: 100%;
+  width: 100%;  
 }
+
+
 
 .contenair-double-menu-un {
   display: flex;
@@ -40,6 +42,16 @@
 
 @media only screen and (min-width: 1075px) {
 
+
+  .restaurants .encart-nouveau-deux {
+    bottom: 245px;
+    right: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+   }
+
+  
   .fonctionnement .fonctionnement__titre {
 text-align: center;
 }

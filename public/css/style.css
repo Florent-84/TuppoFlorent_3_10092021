@@ -364,7 +364,10 @@ body {
   text-decoration: none;
   color: black;
 }
-.restaurants .encart-nouveau-un {
+.restaurants #restaurant-un {
+  position: relative;
+}
+.restaurants #restaurant-un .encart-nouveau-un {
   width: 80px;
   height: 22px;
   color: #008766;
@@ -375,10 +378,13 @@ body {
   font-size: 13px;
   padding-top: 7px;
   position: absolute;
-  top: 955px;
-  right: 20px;
+  top: 7px;
+  right: 8px;
 }
-.restaurants .encart-nouveau-deux {
+.restaurants #restaurant-deux {
+  position: relative;
+}
+.restaurants #restaurant-deux .encart-nouveau-deux {
   width: 80px;
   height: 22px;
   color: #008766;
@@ -390,8 +396,8 @@ body {
   font-size: 13px;
   padding-top: 7px;
   position: absolute;
-  right: 20px;
-  top: 1215px;
+  right: 8px;
+  top: 7px;
 }
 .restaurants .container-texte-logo {
   display: flex;
@@ -762,6 +768,14 @@ body {
   }
 }
 @media only screen and (min-width: 1075px) {
+  .restaurants .encart-nouveau-deux {
+    bottom: 245px;
+    right: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+  }
+
   .fonctionnement .fonctionnement__titre {
     text-align: center;
   }
