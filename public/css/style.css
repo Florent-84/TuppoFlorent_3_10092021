@@ -94,6 +94,7 @@ body {
 .header-logo {
   text-align: center;
   height: 65px;
+  position: relative;
 }
 
 .header-logo img {
@@ -180,9 +181,8 @@ body {
   padding: 3px 7px 3px 7px;
   border-radius: 12px;
   font-size: 14px;
-  position: relative;
-  right: 30px;
-  right: 28px;
+  position: absolute;
+  left: -11px;
 }
 
 .numero-deux {
@@ -191,9 +191,8 @@ body {
   padding: 3px 7px 3px 7px;
   border-radius: 12px;
   font-size: 14px;
-  position: relative;
-  right: 30px;
-  right: 33px;
+  position: absolute;
+  left: -11px;
 }
 
 .numero-trois {
@@ -202,15 +201,15 @@ body {
   padding: 3px 7px 3px 7px;
   border-radius: 12px;
   font-size: 14px;
-  position: relative;
-  right: 30px;
+  position: absolute;
+  left: -11px;
 }
 
 /*style des boutons*/
 .choisissez {
-  width: 325px;
+  width: 375px;
+  padding: 0px;
   height: 75px;
-  padding-right: 50px;
   border-radius: 25px;
   border: none;
   font-family: "roboto", sans-serif;
@@ -219,10 +218,10 @@ body {
   background-color: #f6f6f6;
   box-shadow: 0px 5px 10px rgba(27, 27, 27, 0.1);
   cursor: pointer;
-  margin-left: 15px;
+  margin-left: 25px;
   margin-right: 15px;
   margin-bottom: 25px;
-  text-align: right;
+  position: relative;
 }
 .choisissez:hover {
   background: #f5edff;
@@ -233,9 +232,9 @@ body {
 }
 
 .composez {
-  width: 325px;
+  width: 375px;
+  padding: 0px;
   height: 75px;
-  padding-right: 50px;
   border-radius: 25px;
   border: none;
   font-family: "roboto", sans-serif;
@@ -244,9 +243,11 @@ body {
   background-color: #f6f6f6;
   box-shadow: 0px 5px 10px rgba(27, 27, 27, 0.1);
   cursor: pointer;
-  margin-left: 15px;
+  margin-left: 25px;
   margin-right: 15px;
   margin-bottom: 25px;
+  position: relative;
+  padding-right: 20px;
 }
 .composez:hover {
   background: #f5edff;
@@ -257,9 +258,9 @@ body {
 }
 
 .degustez {
-  width: 325px;
+  width: 375px;
+  padding: 0px;
   height: 75px;
-  padding-right: 50px;
   border-radius: 25px;
   border: none;
   font-family: "roboto", sans-serif;
@@ -268,9 +269,11 @@ body {
   background-color: #f6f6f6;
   box-shadow: 0px 5px 10px rgba(27, 27, 27, 0.1);
   cursor: pointer;
-  margin-left: 15px;
+  margin-left: 25px;
   margin-right: 15px;
   margin-bottom: 25px;
+  position: relative;
+  padding-right: 20px;
 }
 .degustez:hover {
   background: #f5edff;
@@ -284,18 +287,21 @@ body {
   font-size: 20px;
   margin-right: 28px;
   color: #7e7e7e;
+  margin-left: 15px;
 }
 
 .liste {
   font-size: 18px;
   margin-right: 20px;
   color: #7e7e7e;
+  margin-left: 15px;
 }
 
 .store {
   font-size: 16px;
   margin-right: 20px;
   color: #7e7e7e;
+  margin-left: 16px;
 }
 
 .fonctionnement {
@@ -420,6 +426,7 @@ body {
 }
 .restaurants .contenair_logo {
   margin: 20px;
+  margin-left: 0px;
   height: 20px;
   height: 23px;
   font-size: 23px;
@@ -524,9 +531,9 @@ body {
 
 .retouraccueil {
   font-size: 20px;
-  position: relative;
-  left: -75px;
-  bottom: 8px;
+  position: absolute;
+  left: 30px;
+  bottom: 14px;
 }
 
 .fa-arrow-left {
@@ -560,7 +567,6 @@ body {
 .contenair_menu .container-texte-logo {
   display: flex;
   justify-content: space-between;
-  height: 70px;
 }
 .contenair_menu .container-texte-logo .contenair_logo {
   margin: 20px;
@@ -633,7 +639,7 @@ body {
   border-color: #99e2d0;
 }
 .contenair_menu h3 {
-  width: max-content;
+  width: 100%;
   margin: 0px;
   margin-top: 10px;
   margin-left: 10px;
@@ -649,6 +655,7 @@ body {
 .contenair_menu strong {
   height: 15px;
   margin-top: 39px;
+  margin-right: 15px;
   align-content: center;
   display: flex;
   color: #464646;
@@ -670,6 +677,7 @@ body {
   justify-content: space-between;
   flex-direction: column;
   height: 50px;
+  width: 85%;
 }
 @keyframes anim-check {
   0% {
@@ -691,15 +699,10 @@ body {
 .contenair_menu .block-description-menu:active .validation-menu {
   transform-origin: right;
   animation-name: anim-check;
-  animation-duration: 600ms;
+  animation-duration: 700ms;
   opacity: 1;
 }
 .contenair_menu .block-description-menu:active .logo-check {
-  color: #99e2d0;
-  background-color: white;
-  font-size: 12px;
-  padding: 3px 4px 3px 4px;
-  border-radius: 50%;
   transform: rotate(360deg);
   transition: transform 500ms cubic-bezier(0.1, 0.39, 0.59, 0.99);
 }
@@ -709,12 +712,12 @@ body {
   align-items: center;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  width: 58px;
+  width: 70px;
   background-color: #99e2d0;
   cursor: pointer;
   opacity: 0;
 }
-.contenair_menu .logo-check {
+.contenair_menu .validation-menu .logo-check {
   color: #99e2d0;
   background-color: white;
   font-size: 12px;

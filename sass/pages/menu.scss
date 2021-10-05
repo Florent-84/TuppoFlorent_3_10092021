@@ -8,9 +8,9 @@
 
 .retouraccueil {
     font-size: 20px;
-    position: relative;
-    left: -75px;
-    bottom: 8px;
+    position: absolute;
+    left: 30px;
+    bottom: 14px;
 }
 
 .fa-arrow-left {
@@ -44,7 +44,7 @@
     .container-texte-logo {
         display: flex;
         justify-content: space-between;
-        height: 70px;
+        
 
         .contenair_logo {    
             margin: 20px;
@@ -133,7 +133,7 @@
 }
 
 h3 {
-   width: max-content;
+   width: 100%;
    margin: 0px;
    margin-top: 10px;
    margin-left: 10px;
@@ -150,6 +150,7 @@ h3 {
 strong {
     height: 15px;
     margin-top: 39px;
+    margin-right: 15px;
     align-content: center;
     display: flex;
     color: #464646;
@@ -174,6 +175,7 @@ strong {
     justify-content: space-between;
     flex-direction: column;
     height: 50px;
+    width: 85%;
 }
 
 
@@ -201,21 +203,16 @@ strong {
        .validation-menu {
         transform-origin: right;
         animation-name: anim-check;          
-        animation-duration: 600ms;
+        animation-duration: 700ms;
         opacity: 1;
         }
 
        .logo-check {
-        color: $color-tertiary;
-        background-color: white;
-        font-size: 12px;
-        padding: 3px 4px 3px 4px;
-        border-radius: 50%;
         transform: rotate(360deg);
         transition: transform 500ms cubic-bezier(.10,.39,.59,.99);
         }
+        
 }
-
 
 /*DIV VALIDATION MENU*/
 .validation-menu {
@@ -224,12 +221,10 @@ strong {
     align-items: center;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    width: 58px;
+    width: 70px;
     background-color: $color-tertiary;
     cursor: pointer;
     opacity: 0;   
-}
-
 
 .logo-check {
     color: $color-tertiary;
@@ -238,6 +233,7 @@ strong {
     padding: 3px 4px 3px 4px;
     border-radius: 50%;
     }
+}
  
 /*BOUTON COMMANDER*/
 .bouton-explorer button {
