@@ -1,3 +1,22 @@
+@media only screen and (max-width: 335px) {
+
+    .contenair_menu .titre-soustitre {
+       width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+.contenair_menu .intitule {
+    width: 250px;
+}
+
+.contenair_menu strong {
+    margin-left: 5px;
+}
+}
+
+
 @media only screen and (min-width: 600px){
     .contenair_menu .container-texte-logo {
         justify-content: center;

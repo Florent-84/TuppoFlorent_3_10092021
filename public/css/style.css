@@ -543,7 +543,7 @@ body {
 /*CARTE MENU LA PALETTE DU GOUT*/
 .contenair_menu {
   background-color: #f6f6f6;
-  height: 1090px;
+  height: auto;
   position: relative;
   margin-top: -55px;
   border-top-left-radius: 45px;
@@ -648,9 +648,12 @@ body {
   padding-bottom: 3px;
 }
 .contenair_menu .intitule {
-  width: 300px;
+  width: 290px;
   font-size: 15px;
   margin-left: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .contenair_menu strong {
   height: 15px;
@@ -801,6 +804,22 @@ body {
 
   .restaurants .contenair-double-menu-deux {
     width: 50%;
+  }
+}
+@media only screen and (max-width: 335px) {
+  .contenair_menu .titre-soustitre {
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .contenair_menu .intitule {
+    width: 250px;
+  }
+
+  .contenair_menu strong {
+    margin-left: 5px;
   }
 }
 @media only screen and (min-width: 600px) {

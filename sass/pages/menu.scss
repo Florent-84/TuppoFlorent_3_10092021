@@ -21,7 +21,7 @@
 
 .contenair_menu {
     background-color: #f6f6f6;
-    height: 1090px;
+    height: auto;
     position: relative;
     margin-top: -55px;
     border-top-left-radius: 45px;
@@ -143,9 +143,12 @@ h3 {
 }
 
 .intitule {
-    width: 300px;
+    width: 290px;
     font-size: 15px;
     margin-left: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 strong {
     height: 15px;
