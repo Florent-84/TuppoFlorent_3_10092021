@@ -574,8 +574,7 @@ body {
   height: 23px;
   font-size: 23px;
   color: #848484;
-  display: flex;
-  
+  display: flex; 
 }
 .contenair_menu .container-texte-logo .logo-coeur-vide {
   position: relative;
