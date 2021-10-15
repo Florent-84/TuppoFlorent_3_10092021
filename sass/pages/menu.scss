@@ -186,7 +186,7 @@ strong {
 @keyframes anim-check {
     0% {
         transform: scalex(0);      
-    }    
+    }
 
     100% {
         transform: scalex(1);     
@@ -196,6 +196,7 @@ strong {
 
 .block-description-menu:active { 
     transform: scale(1.02);
+
 
     .intitule {
         width: 230px;
@@ -208,12 +209,13 @@ strong {
         animation-name: anim-check;          
         animation-duration: 700ms;
         opacity: 1;
-        }
+        
 
        .logo-check {
         transform: rotate(360deg);
-        transition: transform 500ms cubic-bezier(.10,.39,.59,.99);
+        transition: transform 500ms cubic-bezier(0.10, 0.39, 0.59,.99);
         }
+    }
         
 }
 
@@ -227,7 +229,8 @@ strong {
     width: 70px;
     background-color: $color-tertiary;
     cursor: pointer;
-    opacity: 0;   
+    opacity: 0;
+     
 
 .logo-check {
     color: $color-tertiary;
